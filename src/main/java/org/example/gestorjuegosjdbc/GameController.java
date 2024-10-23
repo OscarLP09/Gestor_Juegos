@@ -80,7 +80,7 @@ public class GameController implements Initializable
             g.setDescription(txtDescription.getText());
             g.setUser( Session.currentUser );
             g.setUser_id(Session.currentUser.getId());
-            g.setImage_url("image"+(1+Math.round(Math.random()*6)+".jpg"));
+            g.setImage_url("image"+(1+Math.round(Math.random()*5)+".jpg"));
             gameDAO.save(g);
 
             Session.currentGame=null;
